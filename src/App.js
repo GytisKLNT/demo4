@@ -8,13 +8,26 @@ const App = () => {
   return (
     <>
       <Hero title="New York" subtitle="Find out everything about NY here!" />
-      <Section></Section>
-      <Article title="Things to do in NY">
-        <p>You can do many things...</p>
-        <Button handleClick={() => alert("hi")} type="button">
-          Button
-        </Button>
-      </Article>
+      <Section>
+        <Article title="Best Bars in NY">
+          <ul>
+            <li>Cherry On Top</li>
+            <li>Amelie</li>
+            <li>Sauced</li>
+          </ul>
+        </Article>
+        <Article title="Things to do in NY">
+          <p>You can do many things...</p>
+          <Button
+            handleClick={() =>
+              window.location.replace("https://github.com/GytisKLNT/demo4.git")
+            }
+            type="button"
+          >
+            Button
+          </Button>
+        </Article>
+      </Section>
     </>
   );
 };
