@@ -11,7 +11,9 @@ const App = () => {
       <Section></Section>
       <Article title="Things to do in NY">
         <p>You can do many things...</p>
-        <Button type="button">Button</Button>
+        <Button handleClick={() => alert("hi")} type="button">
+          Button
+        </Button>
       </Article>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ type, color, children }) => {
+const Button = ({ type, color, children, handleClick }) => {
   const bold = {
     background: "rgb(0, 0, 0)",
     color: "rgb(255, 255, 255)",
@@ -12,7 +12,11 @@ const Button = ({ type, color, children }) => {
   };
 
   return (
-    <button style={color === "bold" ? bold : outline} type={type}>
+    <button
+      onClick={handleClick}
+      style={color === "bold" ? bold : outline}
+      type={type}
+    >
       {children}
     </button>
   );
